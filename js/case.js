@@ -22,9 +22,15 @@ function getotalPrieceValue(getFinalValue) {
 document.getElementById('Case_Iphone').addEventListener('click', function () {
     const getFinalValue = getcaseCart(true);
     getotalPrieceValue(getFinalValue);
+    currentSubtotal();
+
+
+
 })
 
 document.getElementById('get_minus').addEventListener('click', function () {
     const getFinalValue = getcaseCart(false);
     getotalPrieceValue(getFinalValue);
+    currentSubtotal();
+
 })

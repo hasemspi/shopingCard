@@ -18,13 +18,17 @@ function getdataTotalPrice(newCurrentData) {
     getPrice.innerText = getprices;
 }
 
-
 document.getElementById('getIphoneIncre').addEventListener('click', function () {
     const newCurrentData = getiPhoneData(true);
     getdataTotalPrice(newCurrentData);
+    //Calculator
+    currentSubtotal();
+
+
 
 })
 document.getElementById('getIphoneDec').addEventListener('click', function () {
     const newCurrentData = getiPhoneData(false);
     getdataTotalPrice(newCurrentData);
+    currentSubtotal();
 })
